@@ -1,0 +1,76 @@
+.container {
+  --padding-l-r: 18px;
+  max-width: calc(1206px - var(--padding-l-r) * 2);
+  margin: 0 auto;
+}
+
+.grid {
+  --grid-col: 1;
+  display: grid;
+  grid-template-columns: repeat(var(--grid-col), 1fr);
+  gap: 30px;
+}
+
+.grid--2-cols {
+  --grid-col: 2;
+}
+
+.grid--3-cols {
+  --grid-col: 3;
+}
+
+.gap {
+  gap: 30px;
+}
+
+.min-width {
+  min-width: 339px;
+}
+
+.btn {
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 600;
+  background-color: var(--green);
+  color: var(--white);
+}
+
+.text-align {
+  text-align: center;
+}
+
+.p18-18 {
+  font-size: 18px;
+  line-height: 1;
+}
+
+.p16-16 {
+  font-size: 16px;
+  line-height: 1;
+}
+
+.p16-36 {
+  font-size: 16px;
+  line-height: calc(36 / 16);
+}
+
+.p14-14 {
+  font-size: 14px;
+  line-height: 1;
+}
+
+.p14-16 {
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 2%;
+}
+
+.p14-24 {
+  font-size: 14px;
+  line-height: calc(24 / 14);
+}
+
+.p12-22 {
+  font-size: 12px;
+  line-height: calc(24 / 12);
+}

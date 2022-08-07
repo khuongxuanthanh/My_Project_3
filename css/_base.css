@@ -1,0 +1,104 @@
+/* ***************** */
+/* RESET CSS */
+/* ***************** */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ff-1);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: calc(26 / 16);
+  color: var(--gray-200);
+  background-color: var(--black-300);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--ff-2);
+  color: var(--white);
+}
+
+h3 {
+  line-height: 1;
+}
+
+h4 {
+  font-size: clamp(18px, calc(10px + 2.1vw), 24px);
+  line-height: calc(38 / 24);
+  font-weight: 400;
+}
+
+h5 {
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  font-weight: 600;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+input,
+button {
+  display: inline-block;
+  color: inherit;
+  font: inherit;
+}
+
+/* ***************** */
+/* REUSABLE ELEMENTS */
+/* ***************** */
+.heading-primary {
+  font-size: clamp(44px, calc(36px + 2.1vw), 66px);
+  font-weight: 700;
+  line-height: calc(76 / 66);
+  text-transform: capitalize;
+}
+
+.heading-secondary {
+  font-size: clamp(36px, calc(28px + 2.1vw), 48px);
+  font-weight: 600;
+  line-height: calc(58 / 48);
+  text-transform: capitalize;
+}
+
+.subheading-secondary {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1;
+  color: var(--green);
+}
+
+/* border img */
+.img-box {
+  --img-border-radius: var(--border-radius-md);
+  --border-spacing: clamp(14px, calc(6px + 2.1vw), 20px);
+  max-width: 510px;
+  height: auto;
+  border: var(--border-spacing) solid #282829;
+  border-radius: calc(var(--border-spacing) + var(--img-border-radius));
+  overflow: hidden;
+}
